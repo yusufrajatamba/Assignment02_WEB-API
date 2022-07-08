@@ -1,0 +1,31 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+var01 = WS.sendRequest(findTestObject('Web API/comments/POST'))
+
+WS.verifyResponseStatusCode(this.var01, 201)
+
+assert var01.getStatusCode () == 201
+
+WS.verifyElementPropertyValue(var01, 'postId', '101' )
+WS.verifyElementPropertyValue(var01, 'id', '501' )
+WS.verifyElementPropertyValue(var01, 'name', 'Yusuf Raja Tamb' )
+WS.verifyElementPropertyValue(var01, 'email', 'yusuf.tamba@bfi.co.id' )
+WS.verifyElementPropertyValue(var01, 'body', 'Hallo yusuf' )
+

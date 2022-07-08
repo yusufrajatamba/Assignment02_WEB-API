@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify DELETE by ID</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>11150bcf-e442-40db-83a4-491e16712389</testCaseGuid>
+</TestCaseEntity>
