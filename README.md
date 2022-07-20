@@ -6,7 +6,7 @@ Explanation of QA Automation Testing WEB API Project
 Participant code : KSAT006ONL003
 
 Title : QA Enginer Junior :)
-
+link Project : https://github.com/yusufrajatamba/KATALON_Assignment-02.git
 ----------------------------------------------------
 
 Project Name : Assignment 02 - WEB Testing URL : http://jsonplaceholder.typicode.com/
